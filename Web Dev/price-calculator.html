@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="price-calculator-style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<title>Price calculator</title>
+</head>
+
+<body>
+	<div class="form-wrapper">
+		<h1 class="price-title">CALCULATE YOUR PRICE</h1>
+		<form class="price-calculator-form">
+			<label class="first-question">1. Choose a category for your video:</label>
+				<select class="answer-wrapper" id="category-answer">
+					<option value="wedding">Wedding</option>
+					<option value="corporate">Corporate</option>
+					<option value="travel">Travel</option>
+				</select>
+			<label class="question">2. What is the length of the raw footage you will be providing?</label>
+				<select class="answer-wrapper" id="length-answer">
+					<option value="value1"> &lt 30 min </option>
+					<option value="value2">31-60 min</option>
+					<option value="value3">61-90 min</option>
+					<option value="value4">91-120 min</option>
+					<option value="value5">121-180 min</option>
+					<option value="value6"> &gt 180 min</option>
+				</select>
+			<label class="question">3. Would you like to add some pictures?</label>
+			<!-- <div class="answer-wrapper">
+				Yes<input type="radio" name="pictures" value="yes" checked class="pictures-answer" id="pictures-yes">
+				No<input type="radio" name="pictures" value="no" class="pictures-answer" id="pictures-no">
+			</div> -->
+				<select class="answer-wrapper" id="pictures-answer">
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</select>
+
+			<label class="question">4. When do you want us to send the first cut of your video?</label>	
+			<!-- <div class="answer-wrapper">
+				48 hours<input type="radio" name="time" value="hours" checked class="time-answer">
+				7 days<input type="radio" name="time" value="days" class="time-answer">
+			</div> -->
+				<select class="answer-wrapper" id="time-answer">
+					<option value="hours"> 48 hours </option>
+					<option value="days"> 7 days</option>
+				</select>
+
+			<button class="calculate-button">Calculate</button>
+
+		</form>
+
+		<p class="status"></p>
+	</div>
+
+	<script type="text/javascript" src="price-calculator-script.js"></script>
+
+
+</body>
+</html>

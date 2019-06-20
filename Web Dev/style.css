@@ -1,0 +1,1027 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat-Regular";
+/* 	overflow-x: hidden;
+overflow-y: hidden;  */
+	font-size: 1rem;
+}
+
+@font-face {
+  font-family: 'Montserrat-LightItalic';
+  src: url('Fonts/Montserrat-LightItalic.ttf') format('truetype'),
+       url('Fonts/Montserrat-LightItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('Fonts/Montserrat-Regular.ttf') format('truetype'),
+       url('Fonts/Montserrat-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Light';
+  src: url('Fonts/Montserrat-Light.ttf') format('truetype'),
+       url('Fonts/Montserrat-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main-page-wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: black;
+}
+
+ .video-wrap {
+	width: 100%;
+	height: fit-content;
+	max-height: 100vh;
+	overflow: hidden;
+}
+
+.main-video {
+	width: 100%;
+}
+
+.header-title {
+	position: absolute;
+	top: 48%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s ease-in-out;
+}
+
+.title {
+	font-size: 5.4rem;
+	color: white;
+	margin-bottom: -1rem;
+	white-space: nowrap;
+	/* text-shadow: 3px 3px 15px #474747; */
+}
+
+.slogan {
+	font-family: "Montserrat-LightItalic";
+	color: white;
+	text-align: center;
+	font-size: 1.3rem;
+	opacity: 1;
+	visibility: visible;
+	transition: all 0.2s linear;
+}
+
+/* ------------------------------Nav Bar----------------------------- */
+
+.headerNav {
+	z-index:1;
+	position: absolute;
+	top: 1%;
+	color: white;
+	font-size: 1.25rem;
+}
+
+#mainNav {
+	text-decoration: none;
+	display: flex;
+	margin:auto;
+	justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+	width: 10rem;
+	padding: 0;
+}
+
+.all-a {
+	color: white;
+	text-decoration: none;
+	margin-right: 2rem;
+	margin-left: 2rem;
+	text-align: center;
+	white-space: nowrap;
+}
+
+
+/* -------------------------Social Icons---------------------------- */
+
+.main-page-wrapper {
+	position: relative;
+}
+
+.social-icons {
+	position: absolute;
+	top: 35%;
+	left: 1%;
+}
+
+ .social-container {
+	list-style: none;
+	margin-left: 10px;
+	padding: 0;
+	display: grid;
+  	grid-template-rows: fit-content(100px) fit-content(100px) 1fr;
+  	grid-gap: 5px;
+  	text-align: center;            /* se foloseste la parinte ca sa se alinieze copiii*/
+} 
+
+.fab, .fas {
+	color: white;
+	margin-top: 30px;
+	cursor: pointer;
+	font-size: 20px;
+	opacity: 0.75;
+}
+
+
+/* -----------------------------ABOUT US------------------------- */
+
+.about-us-container {
+	background: white;
+	width: 100%;
+ 	/*margin-top: 20px;*/
+	/*margin-bottom: 30px; */
+	text-align: center;
+	font-family: "Montserrat-Regular";
+}
+
+.about-us-title {
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	text-align: center;
+	margin: 70px 0px 0px 0px;
+}
+
+.about-us-desc {
+	font-size: 21px;
+	font-family: "Montserrat-Light";
+	max-width: 1200px;
+	/*margin-bottom: 50px;*/
+	padding-top: 20px;
+	padding-bottom: 70px;
+	line-height: 35px;
+	margin-top: 0px;
+	text-align: center;
+	margin: auto;
+}
+
+.about-us-title::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 3px;
+	background: black;
+	margin: 20px auto auto auto;
+}
+
+
+.au-info {
+	display: grid;
+	grid-template-columns: repeat(4, 200px);
+	grid-template-rows: repeat(2, 200px);
+	grid-gap: 50px 150px;
+	justify-content: center;
+	align-items: center;
+	max-width: 1200px;
+	margin: auto;
+	padding: 70px 0px;
+}
+
+.info-background {
+	background: #F5F5F5;
+}
+
+.icons-second-row .icons-first-row{
+	width: 120px;
+	text-align: center;
+	font-size: 23px;
+	font-family: "Montserrat-Regular";
+	line-height: 30px;
+}
+
+
+@media screen and (max-width: 1000px) {
+/*	.header-title {
+		top: 10vh;
+	}*/
+	.title {
+		font-size: 3rem;
+	}
+}
+
+
+
+/* -----------------------------------Our Work--------------------------------- */
+
+.our-work-section {
+	background: white;
+	width: 100%;
+}
+
+.our-work-title {
+	color: black;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 70px;
+	margin: 0px;
+}
+
+.our-work-title::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 3px;
+	background: black;
+	margin: 20px auto auto auto;
+}
+
+.portfolio-button {
+	cursor: pointer;
+	color: white;
+	border: 2px;
+	outline: none;
+	background: black;
+	width: 150px;
+	height: 40px;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	margin-top: 20px;
+}
+
+.portfolio-button:hover {
+	color: black;
+	background: white;
+	border: 2px solid;
+	border-color: black;
+	transition: all 0.15s ease-in-out;
+}
+
+.portfolio-button-active {
+	color: black;
+	background: white;
+	border: 2px solid;
+	border-color: black;
+	transition: all 0.15s ease-in-out;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+/*  .portfolio-button::after {
+	position: absolute;
+	content:"";
+	background: transparent;
+	border-color: white;
+	border: 3px;
+	width: 100px;
+	height: 20px;
+	z-index: 1;
+}  */
+
+.all-three {
+	position: relative;
+	padding-bottom: 70px;
+}
+
+.travel-cards {
+	/*position: absolute;*/
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	grid-template-rows: repeat(2, 300px);
+	grid-gap: 50px 30px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+	/*top: 50%;*/
+	/*left: 50%;*/
+	/*transform: translate(-50%, -50%);*/
+}
+
+.wedding-cards, .corporate-cards {
+	/*position: absolute;*/
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
+	grid-template-rows: repeat(2, 300px);
+	grid-gap: 50px 30px;
+	justify-content: center;
+	align-items: center;
+	padding-top: 50px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*transform: translate(-50%, -50%);*/
+}
+
+/*.corporate-cards {
+	grid-template-columns: repeat(1, 400px);
+	grid-template-rows: repeat(1, 300px);
+}*/
+
+.wedding-cards {
+	/*visibility: hidden;*/
+}
+
+.hidden {
+	visibility: hidden;
+	display: none;
+}
+
+.portfolio-card {
+	position: relative;
+	background: #dddddd;
+	width: 400px;
+	height: 300px;
+	cursor: pointer;
+
+}
+
+.action-text{
+	/* display: none; */
+	visibility: hidden;
+	/* z-index:-1; */
+}
+
+.portfolio-card:hover::after {
+	position: absolute; 
+	content: "";
+	width: 320px;
+	height: 240px;
+	background: white;
+	opacity: 0.6;
+	top: 30px;
+	left: 40px;
+	transition: all 0.3s ease-in-out;
+}
+
+.portfolio-card:hover .action-text{
+	padding: 40px;
+	line-height: 40px;
+	text-align: center;
+	visibility: visible;
+	z-index: 1;
+	opacity: 0.8;
+	transition: all 0.2s ease-in-out;
+}
+
+/* -----------------HOW IT WORKS------------------- */
+
+.how-it-works-wrapper {
+	width: 100%;
+	/*height: 1000px;*/
+	background: #F5F5F5;
+	padding-bottom: 70px;
+}
+
+.how-it-works-title {
+	color: black;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 120px;
+	margin-top: 0px;
+}
+
+.how-it-works-title::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 3px;
+	background: black;
+	margin: 20px auto auto auto;
+}
+
+.geo-form {
+	position: relative;
+	display: block;
+	float: left;
+	width: 45%;
+	height: 220px;
+	background: white;
+	border-radius: 0px 120px 120px 0px;
+	margin-top: -50px;
+	/*margin-bottom: 35px;*/
+	box-shadow: 8px 8px 15px #E2E2E2;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	clear: both;
+}
+
+.geo-form-reversed {
+	position: relative;
+	text-align: center;
+	float: right;
+	width: 45%;
+	height: 220px;
+	background: white;
+	border-radius: 120px 0px 0px 120px;
+	margin-top: -50px;
+	/*margin-bottom: -100px;*/
+	box-shadow: -8px 8px 15px #E2E2E2;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+
+.subtitle {
+	padding-top: 15px;
+	/*text-align: center;*/
+	font-size: 18px;
+	font-family: "Montserrat-Regular";
+
+}
+
+.hw-desc-left, .hw-desc-right{
+	width: 800px;
+	position: absolute;
+	text-align: left;
+	top: 50%;
+	left: 50%;
+	line-height: 25px;
+	transform: translate(-50%, -50%);
+	padding: 20px;
+	/* margin: auto; */
+	/*padding-left: 125px;*/
+}
+
+.hw-desc-right {
+	text-align: right;
+	left: 50%;
+	/* transform: translateX(-50%); */
+}
+
+/* ----------------------------PRICE-------------------------- */
+
+.calculate-price-wrapper {
+	position: relative;
+}
+
+.price-title {
+	color: white;
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, -30%);
+	font-size: 30px;
+	letter-spacing: 2px;
+	text-align: center;
+}
+
+.img-mountains {
+	width:100%;
+	height: 350px;
+	object-fit: cover;
+}
+
+.price-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: black;
+	border: none;
+	outline: none;
+	background: white;
+	width: 150px;
+	height: 40px;
+	margin-right: 7.5px;
+	margin-left: 7.5px;
+	margin-top: 40px;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: "Montserrat-Regular" 
+}
+
+/* -----------------------REVIEWS------------------ */
+
+.review-title {
+	color: black;
+	display: block;
+	font-size: 30px;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 50px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin:0;
+	line-height: 40px;
+}
+
+.review-title::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 3px;
+	background: black;
+	margin: 20px auto auto auto;
+}
+
+.cards-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  flex-wrap: wrap;
+}
+
+.review-card {
+	width: 300px;
+	height: 450px;
+	background: #F5F5F5;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+	color: black;
+	border-radius: 5px;
+	box-shadow: 8px 8px 15px #E2E2E2;
+}
+
+.person-img {
+	width: 150px;
+	margin-top: 25px;
+}
+
+.person-name {
+	font-size: 15px;
+	font-style: bold;
+}
+
+.person-name::after {
+	content: "";
+	display: block;
+	width: 45px;
+	height: 1.5px;
+	background: black;
+	margin: 20px auto auto auto;
+}
+
+.person-desc {
+	padding: 0px 50px 50px 50px;
+}
+
+
+/*------------------------FORM------------------*/
+
+.form-box {
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	font-family: "Montserrat-Regular";
+	width: fit-content;
+	height: fit-content;
+}
+
+.form-title {
+	color: black;
+	text-align: center;
+	font-size: 30px;
+	letter-spacing: 5px;
+	margin-top: 0;
+	margin-bottom: 75px;
+	padding-right: 15px;
+	padding-left: 15px;
+	line-height: 40px;
+}
+
+.form-box label {
+	display: block;
+	color: #312C32;
+	font-size: 17px;
+	color: #312C32;
+	font-family: "Montserrat-Regular";
+	margin-top: 50px;
+}
+
+.form-box input {
+	background: transparent;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	line-height: 30px;
+	outline: none;
+	padding: 10px 10px 5px 10px;
+	width: 500px;
+	color: black;
+	opacity: 0.8;
+	font-size: 18px;
+	border-bottom: 2.5px solid #CCC;
+	transition: all 0.2s ease-in-out;
+}
+
+.form-box input::placeholder {
+	color: black;
+	opacity: 0.2;
+}
+
+input:focus{
+	border-color: black;
+	opacity: 0.5;
+	border-bottom: 2.5px solid black;
+}
+
+.form-group {
+	margin: auto;
+	/*display: inline-block;*/
+	width: fit-content;
+}
+
+.form-box #message {
+	border: 2px solid #CCC;
+	height: 150px;
+	width: 100%;
+	background: transparent;
+	margin-top: 10px;
+	padding: 10px;
+	outline: none;
+	color: black;
+	margin-bottom: 50px;
+}
+
+.send-btn {
+	display: block;
+	margin: auto;
+}
+
+/*--------------------Sticky Nav Bar--------------------*/
+
+#mainNav{
+	position: fixed;
+	top: 0;
+	left: 50%;
+	width: 1000px;
+	transform: translateX(-50%);
+	padding-top: 1.5rem;
+	transition: 0.2s ease-in-out;
+}
+
+#mainNav.fixed-nav{
+	z-index: 1;
+	background: black;
+	height: 80px;
+	width: 100%;
+	padding-top: 1rem;
+	transition: 0.2s ease-in-out;
+}
+
+
+
+/*#mainNav::before{
+	content: "";
+	position: fixed;
+	z-index: 1;
+	background: #312C32;
+	height: 80px;
+	width: 100%;
+	padding-top: 1rem;
+	transform: translateY(-20px);
+	opacity: 0;
+	transition: 0.2s ease-in-out;
+}
+
+#mainNav.fixed-nav::before{
+	transform: translateY(0);
+	opacity: 1;
+}*/
+
+/* ----------------Mobile Responsive------------------- */
+
+@media screen and (max-width: 1500px) {
+	.geo-form {
+		position: relative;
+		display: block;
+		float: none;
+		width: 100%;
+		height: 220px;
+		background: white;
+		margin-bottom: 0;
+		margin-top: 0;
+		border-radius: 0px 120px 120px 0px;
+		box-shadow: 8px 8px 15px #E2E2E2;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		clear: both;
+}
+
+	.geo-form-reversed {
+		position: relative;
+		display: block;
+		float: none;
+		width: 100%;
+		height: 220px;
+		background: white;
+		border-radius: 120px 0px 0px 120px;
+		box-shadow: -8px 8px 15px #E2E2E2;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0;
+		clear: both;
+	}
+
+	.hw-desc-left, .hw-desc-right{
+		padding: 50px;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+
+.menu-mobile {
+	visibility: hidden;
+}
+
+@media screen and (max-width: 1300px) {
+	.au-info {
+		display: grid;
+		grid-template-columns: repeat(3, 200px);
+		grid-template-rows: repeat(3, 200px);
+		align-content: space-evenly;
+		justify-content: space-evenly;
+		align-items: start;
+		grid-gap: 0 0;
+		padding-top: 60px;
+		height: fit-content;
+		margin-top: 50px;
+	}
+
+	.travel-cards {
+		grid-template-columns: repeat(2, 400px);
+		grid-template-rows: repeat(2, 300px);
+		align-content: space-evenly;
+		justify-content: space-evenly;
+		align-items: start;
+
+	}
+	
+	.wedding-cards, .corporate-cards {
+		grid-template-columns: repeat(2, 400px);
+		grid-template-rows: repeat(1, 300px);
+		align-content: space-evenly;
+		justify-content: space-evenly;
+		align-items: start;
+
+	}
+}
+
+@media screen and (max-width: 950px) {
+	/* .fixed-nav-mobile {
+		top: 0px !important;
+		left: 0px;
+		color: white;
+		z-index: 3;
+		background: black;
+		height: 70px;
+		width: 100%;
+		margin: 0;
+	} */
+
+	.menu-mobile {
+		visibility: visible;
+		/*width: 100%;*/
+	}
+	#mainNav {
+		visibility: hidden;
+	}
+	#menu-toggler {
+		position: fixed;
+		top: 15px;
+		right: 30px;
+		font-size: 30px;
+		cursor: pointer;
+		z-index: 2;
+		/*visibility: hidden;*/
+	}
+	.menu-mobile-items {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: black;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		align-items: center;
+		padding-top: 100px;
+		/*justify-content: center;*/
+		visibility: hidden;
+	}
+	
+	.items {
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	}
+
+	#exit {
+		z-index: 4;
+		position: fixed;
+		top: 15px;
+		right: 30px;
+		font-size: 30px;
+		cursor: pointer;
+		opacity: 0.5;
+		visibility: hidden;
+	}
+	
+	.social-container-mobile {
+		z-index: 5;
+		display: flex;
+		color: white;
+		list-style: none;
+		flex-wrap:wrap;
+		flex-direction: row;
+		align-items: center;
+		padding: 0;
+	}
+
+	.social-container-mobile li {
+		margin: 10px;
+	}
+
+	.social-icons {
+		visibility: hidden;
+	}
+
+	.slogan {
+		display: none;
+	}
+
+	.header-title {
+		top: 0;
+		transform: translateX(-50%);
+	}
+
+	.title {
+		font-size: 1.5rem;
+		margin: 0;
+		line-height: 114px;
+	}
+
+	.about-us-section {
+		padding: 0 30px;
+	}
+
+	.about-us-title {
+		font-size: 25px;
+	}
+
+	.about-us-desc {
+		line-height: 25px;
+		font-size: 16px;
+	}
+
+	.au-info {
+		display: grid;
+		grid-template-columns: repeat(2, 120px);
+		grid-template-rows: repeat(4, 200px);
+		padding: 50px 0px;
+		grid-gap: 75px 50px;
+	}
+
+	.travel-cards {
+		grid-template-columns: repeat(1, 300px);
+		grid-template-rows: repeat(4, 225px);
+
+	}
+	
+	.wedding-cards, .corporate-cards {
+		grid-template-columns: repeat(1, 300px);
+		grid-template-rows: repeat(2, 225px);
+
+	}
+
+	.how-it-works-title {
+		font-size: 25px;
+		margin-bottom: 0;
+		padding-top: 50px;
+		/*padding-bottom: 50px;*/
+	}
+
+	.our-work-title {
+		font-size: 25px;
+	}
+
+	.geo-form {
+		height: 350px;
+		border-radius: 0px 0px 0px 0px;
+		margin-top: 50px;
+	}
+
+	.geo-form-reversed {
+		height: 350px;
+		border-radius: 0px 0px 0px 0px;
+		margin-top: 50px;
+	}
+
+	.hw-desc-left, .hw-desc-right{
+		width: 90%;
+		font-size: 14px;
+		line-height: 19px;
+		padding: 30px 20px;
+		text-align: center;
+		margin: 0;
+	}
+
+	.subtitle {
+		font-size: 15px;
+		padding-top: 40px;
+		/* padding-bottom: 20px; */
+		margin: 0;
+	}
+
+	.price-title {
+		top: 20%;
+		left: 50%;
+		tranform: translate( -50%, -20%);
+		font-size: 25px;
+	}
+
+	.form-box input {
+		width: 300px;
+	}
+
+	.form-title {
+		font-size: 25px;
+		margin-bottom: 25px;
+		margin-top: 25px;
+	}
+
+	.review-title {
+		font-size: 25px;
+	}
+
+	.portfolio-card {
+		width: 300px;
+		height: 225px;
+		cursor: pointer;
+	}
+
+	.action-text{
+		/* display: none; */
+		visibility: hidden;
+		/* z-index:-1; */
+	}
+
+	.portfolio-card:hover::after {
+		width: 220px;
+		height: 160px;
+		margin: auto;
+	}
+
+	.portfolio-card:hover .action-text {
+		font-size: 15px;
+		margin: auto;
+		line-height: 30px;
+	}
+
+	.person-desc {
+		font-size: 14px;
+	}
+
+}
+
+@media screen and (max-width: 800px) {
+	.main-page-wrapper {
+		width: 100%;
+	}
+}
+
+.menu {
+	visibility: visible;
+}
+
+
+.final-bar {
+	width: 100%;
+	height: 200px;
+	background: black;
+	margin-top: 70px;
+}
